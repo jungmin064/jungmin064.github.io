@@ -26,5 +26,15 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+  // VS Code 기본 이미지 붙여넣기 기능 비활성화 (Paste Image 확장 프로그램과 중복/충돌 방지)
+  "markdown.editor.filePaste.copyIntoWorkspace": "never",
+  "markdown.editor.drop.copyIntoWorkspace": "never",
+  // Paste Image extension settings
+  "pasteImage.path": "/assets/img/",
+  "pasteImage.basePath": "${workspaceFolder}",
+  "pasteImage.prefix": "/",
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}-",
+  "pasteImage.encodePath": "urlEncodeSpace",
+  "pasteImage.insertPattern": "![](${imageFilePath})\n_캡션_"
 }
